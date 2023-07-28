@@ -1,0 +1,15 @@
+{
+  "extends": ["config:base"],
+  "circleci": true,
+  "pathRules": [
+    {
+      "paths": ["website/package.json"],
+      "extends": ["config:base", ":preserveSemverRanges"]
+    }
+  ],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "rangeStrategy": "replace"
+}

@@ -1,0 +1,80 @@
+{
+  "name": "@graphql-codegen/website",
+  "version": "0.0.0-PLACEHOLDER",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start",
+    "build:website": "docusaurus build",
+    "prebuild:website": "yarn generate:config-docs",
+    "prestart": "yarn generate:config-docs",
+    "generate:config-docs": "cd ../packages/utils/config-schema && yarn build ../../../website/ ./docs/generated-config ./static/"
+  },
+  "devDependencies": {
+    "worker-loader": "3.0.0",
+    "file-loader": "6.0.0",
+    "style-loader": "1.2.1",
+    "monaco-editor-webpack-plugin": "1.9.0",
+    "@docusaurus/core": "2.0.0-alpha.61",
+    "@docusaurus/preset-classic": "2.0.0-alpha.61",
+    "@graphql-codegen/config-schema": "0.0.0-PLACEHOLDER",
+    "babel-preset-minify": "0.5.1",
+    "classnames": "2.2.6",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "remark-code-import": "0.2.0",
+    "remark-import-partial": "0.0.2",
+    "ts-node": "8.10.2",
+    "vscode-languageserver-types": "3.15.1"
+  },
+  "dependencies": {
+    "react-markdown": "4.3.1",
+    "monaco-yaml": "2.4.1",
+    "react-select": "3.1.0",
+    "@graphql-codegen/add": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/c-sharp": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/c-sharp-operations": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/cli": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/flow": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/flow-operations": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/flow-resolvers": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/fragment-matcher": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/import-types-preset": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/introspection": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/java": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/java-apollo-android": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/java-resolvers": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/jsdoc": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/near-operation-file-preset": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/schema-ast": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/time": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typed-document-node": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-apollo-angular": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-compatibility": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-generic-sdk": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-graphql-files-modules": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-graphql-request": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-mongodb": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-operations": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-react-apollo": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-resolvers": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-stencil-apollo": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-type-graphql": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-urql": "0.0.0-PLACEHOLDER",
+    "@graphql-codegen/typescript-vue-apollo": "0.0.0-PLACEHOLDER",
+    "react-monaco-editor": "0.39.1",
+    "js-yaml": "3.14.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
