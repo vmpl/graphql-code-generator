@@ -117,6 +117,8 @@
     "graphql-language-service-interface": "2.10.2",
     "**/apollo-language-server/graphql": "^16.0.0",
     "**/@types/graphql-upload/graphql": "^16.0.0",
-    "ts-node": "10.9.1"
+    "ts-node": "10.9.1",
+    "graphql-request": "^4.0.0",
+    "**/graphql-request": "^4.0.0"
   }
 }
